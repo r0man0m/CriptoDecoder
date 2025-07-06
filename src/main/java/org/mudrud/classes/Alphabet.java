@@ -8,7 +8,13 @@ public  class Alphabet {
     private Alphabet(){
     }
     public static Alphabet getAlphabet(){
-        return  new Alphabet();
+        if(alphabet == null){
+            alphabet = new Alphabet();
+        }
+        return  alphabet;
+    }
+    public char[] getSymbols(){
+        return symbols;
     }
 
 }
