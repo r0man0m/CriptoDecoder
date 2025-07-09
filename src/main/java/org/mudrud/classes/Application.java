@@ -11,9 +11,6 @@ public class Application {
     private static final FileServiceInterface fileService =  new FileService();
     public static void main(String[] args) {
         runner();
-        //System.out.println((char)((int)'a' + 1));
-
-
         }
         private static void encode(String fileName){
             List<String> firstText = new ArrayList<>(Application.fileService.read("src/main/resources/" + fileName));
